@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2019 CHK. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ * CHK_GoogleTagManager extension
+ * NOTICE OF LICENSE
+ *
+ * @category 	GoogleTagManager
+ * @package  	CHK_GoogleTagManager
+ * @author   	Koushik CH <info@chkoushik.com>
+ * @copyright   Copyright (c) Koushik CH (https://chkoushik.com/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="CHK_GoogleTagManager::googletagmanager" title="Google Tag Manager" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

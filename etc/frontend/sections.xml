@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2019 CHK. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ * CHK_GoogleTagManager extension
+ * NOTICE OF LICENSE
+ *
+ * @category 	GoogleTagManager
+ * @package  	CHK_GoogleTagManager
+ * @author   	Koushik CH <support@chkoushik.com>
+ * @copyright   Copyright (c) Koushik CH (https://chkoushik.com/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Customer:etc/sections.xsd">
+    <action name="checkout/cart/add">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/delete">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/updatePost">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/updateItemOptions">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/couponPost">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/estimatePost">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/estimateUpdatePost">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/onepage/saveOrder">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/sidebar/removeItem">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/sidebar/updateItemQty">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="rest/*/V1/carts/*/payment-information">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="rest/*/V1/guest-carts/*/payment-information">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="rest/*/V1/guest-carts/*/selected-payment-method">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+    <action name="rest/*/V1/carts/*/selected-payment-method">
+        <section name="chk-gtm-jsdatalayer"/>
+    </action>
+</config>

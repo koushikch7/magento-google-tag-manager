@@ -1,0 +1,20 @@
+<?php
+/**
+ * Copyright © 2019 CHK. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ * CHK_GoogleTagManager extension
+ * NOTICE OF LICENSE
+ *
+ * @category 	GoogleTagManager
+ * @package  	CHK_GoogleTagManager
+ * @author   	Koushik CH <support@chkoushik.com>
+ * @copyright   Copyright (c) Koushik CH (https://chkoushik.com/)
+ */
+?>
+<?php /** @var $block CHK\GoogleTagManager\Block\GtmCode **/ ?>
+
+<!-- Google Tag Manager by CHK -->
+<noscript><iframe src="<?= '/' . '/' ?>www.googletagmanager.com/ns.html?id=<?php echo $block->getAccountId() ?>"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager by CHK -->

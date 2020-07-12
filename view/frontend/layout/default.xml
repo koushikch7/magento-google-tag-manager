@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2019 CHK. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ * CHK_GoogleTagManager extension
+ * NOTICE OF LICENSE
+ *
+ * @category 	GoogleTagManager
+ * @package  	CHK_GoogleTagManager
+ * @author   	Koushik CH <support@chkoushik.com>
+ * @copyright   Copyright (c) Koushik CH (https://chkoushik.com/)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+          <block class="CHK\GoogleTagManager\Block\GtmCode" name="chk_gtm_iframe" as="chk_gtm_iframe" template="CHK_GoogleTagManager::iframe.phtml" />
+        </referenceContainer>
+        <referenceBlock name="head.additional">
+            <block class="CHK\GoogleTagManager\Block\DataLayer" name="chk_gtm_datalayer" as="chk_gtm_datalayer" template="CHK_GoogleTagManager::js.phtml">
+                <arguments>
+                    <argument name="show_ecommerce_currency_code" xsi:type="boolean">true</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

@@ -1,0 +1,37 @@
+<?php
+/**
+ * Copyright © 2019 CHK. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ * CHK_GoogleTagManager extension
+ * NOTICE OF LICENSE
+ *
+ * @category 	GoogleTagManager
+ * @package  	CHK_GoogleTagManager
+ * @author   	Koushik CH <support@chkoushik.com>
+ * @copyright   Copyright (c) Koushik CH (https://chkoushik.com/)
+ */
+?>
+<?php /** @var $block CHK\GoogleTagManager\Block\DataLayer **/ ?>
+<!-- Google Tag Manager by Koushik CH -->
+<script type="text/javascript">
+    window.<?php echo $block->getDataLayerName() ?> = window.<?php echo $block->getDataLayerName() ?> || [];
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "chkGtmDatalayer": {
+                "isCookieRestrictionModeEnabled": <?= $block->isCookieRestrictionModeEnabled() ?>,
+                "currentWebsite": <?= $block->getCurrentWebsiteId() ?>,
+                "cookieName": "<?= $block->getCookieRestrictionName() ?>",
+                "dataLayer": "<?= $block->getDataLayerName() ?>",
+                "accountId": "<?= $block->getAccountId() ?>",
+                "data": <?= $block->getDataLayer() ?>,
+                "isGdprEnabled": <?= $block->isGdprEnabled() ?>,
+                "gdprOption": <?= $block->getGdprOption() ?>
+            }
+        }
+    }
+</script>
+<!-- End Google Tag Manager by Koushik CH -->
